@@ -1,0 +1,42 @@
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    padding: 0 16px;
+    font-family: 'Arsenal SC', sans-serif;
+  }
+  .navbar .brand-logo img {
+    height: 100px; /* Adjust height as necessary */
+    margin: 0;
+  }
+  .navbar .title {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    margin-left: 16px;
+  }
+  .navbar .menu-icon, .navbar .login-icon {
+    cursor: pointer;
+    margin-right: 16px;
+  }
+
+  .tabs .tab a {
+    color: black; /*tab text color */
+  }
+
+  .tabs .tab a:hover, .tabs .tab a.active {
+    color: #ff9800; /*tab text color on hover and active */
+  }
+
+  .tabs .indicator {
+    background-color: #ff9800; /* the underline (indicator) color */
+  }
+
+  

@@ -1,48 +1,325 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    media="screen,projection">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}" />
+  <title>Costal Voices</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-  <body>
+<body>
+  <div class="navbar row blue darken-3">
+    <a class="brand-logo col 2">
+      <img src="{{ url_for('static', filename='img/Coastal_Voices_Logo_v1_transparent.png') }}" alt="Costal Voices Logo">
+    </a>
+    <a href="#" class="title">Coastal Voices</a>
 
-<nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo">LOGO</a>
-    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="#">item1</a></li>
-      <li><a href="#">item2</a></li>
-      <li><a href="#">item3</a></li>
-      <li><a href="#">item4</a></li>
-    </ul>
-    <ul class="side-nav" id="mobile-menu">
-      <li><a href="#">item1</a></li>
-      <li><a href="#">item2</a></li>
-      <li><a href="#">item3</a></li>
-      <li><a href="#">item4</a></li>
-    </ul>
+    <span class="material-icons menu-icon">menu</span>
+    <span class="material-icons login-icon">account_circle</span>
   </div>
-</nav>
 
-<div class="card blue-grey darken-1">
-  <div class="card-content white-text">
-    <span class="card-title"></span>
-    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+  <div style="padding: 30px;"></div>
+
   </div>
-  <div class="card-action">
-    <a href="#">This is a link</a>
-    <a href="#">This is a link</a>
+  <div class="container">
+    <div class="card">
+      <div class="card-content blue darken-3 white-text">
+        <span class="card-title">Coastal Wind Energy Solutions</span>
+        <p>
+          Coastal Wind Energy Solutions is a leading provider of comprehensive data and insights for offshore wind farm
+          projects. Our expertise ensures that stakeholders have access to all necessary information to make informed
+          decisions throughout the bidding process.
+        </p>
+      </div>
+
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Geographical Coordinates</div>
+          <div class="collapsible-body">
+            <ul>
+              <li>Latitude: 36.7783° N, Longitude: 119.4179° W</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">map</i>Detailed Maps and Spatial Planning Data</div>
+          <div class="collapsible-body">
+            <ul>
+              <li>High-resolution maps of the proposed sites.</li>
+              <li>Spatial planning documents outlining permissible areas for development.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">eco</i>Environmental Assessments</div>
+          <div class="collapsible-body">
+            <ul>
+              <li>Low impact on marine biodiversity, moderate impact on avian species.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">terrain</i>Seabed Geology</div>
+          <div class="collapsible-body">
+            <ul>
+              <li>Predominantly sandy seabed, suitable for monopile foundations.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">waves</i>Water Depths</div>
+          <div class="collapsible-body">
+            <ul>
+              <li>Depth range: 20m to 50m</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">directions_boat</i>Existing Uses of the Area</div>
+          <div class="collapsible-body">
+            <ul>
+              <li>Shipping Lanes: Detailed maps indicating proximity to major shipping routes.</li>
+              <li>Fishing Zones: Areas used by local fishing communities with activity levels.</li>
+              <li>Recreational Zones: Information on nearby recreational activities like boating and diving.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">assessment</i>Impact and Viability Assessments</div>
+          <div class="collapsible-body">
+            <ul>
+              <li>High potential with minimal environmental disruption.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <div class="card-action white-text">
+        <a href="#">More Information</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+
+<div style="padding: 30px;"></div>
+
   </div>
-</div>
+  <div class="container">
+    <div class="card blue darken-3">
+      <div class="card-content white-text">
+        <span class="card-title">Offshore Wind Farm Proposals</span>
+        <p>Comparison of proposals from three hypothetical companies for the development of an offshore wind farm at
+          Site X.</p>
+      </div>
+      <div class="card-tabs white-text">
+        <ul class="tabs tabs-fixed-width">
+          <li class="tab"><a href="#company1" class="active">Company A</a></li>
+          <li class="tab"><a href="#company2">Company B</a></li>
+          <li class="tab"><a href="#company3">Company C</a></li>
+        </ul>
+      </div>
+      <div class="card-content white">
+        <div id="company1">
+          <h5>Company A Proposal</h5>
+          <p><strong>Proposal:</strong> Installation of 50 wind turbines with a capacity of 5 MW each, totaling 250 MW.
+          </p>
+          <h6>Impacts and Mitigation Measures:</h6>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">eco</i>Environmental Impact</div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>Potential disruption to marine life.</li>
+                  <li><strong>Mitigation:</strong> Conducting thorough environmental impact assessments and implementing
+                    protective measures such as noise reduction during construction.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">business</i>Economic Impact</div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>Creation of 200 jobs during the construction phase and 50 permanent jobs.</li>
+                  <li><strong>Mitigation:</strong> Partnering with local businesses and providing job training programs.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">people</i>Social Impact</div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>Minimal impact on local communities with careful site selection.</li>
+                  <li><strong>Mitigation:</strong> Engaging with local communities through public consultations and
+                    ensuring transparent communication.</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="company2">
+          <h5>Company B Proposal</h5>
+          <p><strong>Proposal:</strong> Installation of 40 wind turbines with a capacity of 6 MW each, totaling 240 MW.
+          </p>
+          <h6>Impacts and Mitigation Measures:</h6>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">eco</i>Environmental Impact</div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>Possible interference with bird migration paths.</li>
+                  <li><strong>Mitigation:</strong> Utilizing bird-friendly turbine designs and conducting regular
+                    monitoring.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">business</i>Economic Impact</div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>Boost to local economy with an influx of skilled workers.</li>
+                  <li><strong>Mitigation:</strong> Offering relocation incentives and ensuring the integration of local
+                    workforce.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">people</i>Social Impact</div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>Increased traffic and noise during construction.</li>
+                  <li><strong>Mitigation:</strong> Implementing traffic management plans and scheduling construction
+                    activities to minimize disruption.</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="company3">
+          <h5>Company C Proposal</h5>
+          <p><strong>Proposal:</strong> Installation of 60 wind turbines with a capacity of 4 MW each, totaling 240 MW.
+          </p>
+          <h6>Impacts and Mitigation Measures:</h6>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">eco</i>Environmental Impact</div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>Potential impact on local fisheries.</li>
+                  <li><strong>Mitigation:</strong> Creating artificial reefs to support marine life and compensating
+                    affected fishermen.</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">business</i>Economic Impact</div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>Long-term economic benefits through renewable energy production.</li>
+                  <li><strong>Mitigation:</strong> Establishing community funds and investing in local infrastructure.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">people</i>Social Impact</div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>Visual impact on coastal landscape.</li>
+                  <li><strong>Mitigation:</strong> Designing turbines to blend with the environment and ensuring
+                    community involvement in design decisions.</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  </body>
+  <div style="padding: 30px;"></div>
+
+  <!-- The below functionality covers the user voting and test submission -->
+  <div class="card" style="padding-bottom: 15px;">
+    <div class="card-content">
+      <p>Your voice</p>
+      <form id="voting-form">
+        <div class="row">
+          <div class="col s4">
+            1st place
+            <div class="input-field col s12 bid-selector">
+              <select required id="first-place">
+                <option value="" selected>Choose your preferred bid</option>
+                <option value="1">Bid 1</option>
+                <option value="2">Bid 2</option>
+                <option value="3">Bid 3</option>
+              </select>
+            </div>
+          </div>
+  
+          <div class="col s4">
+            2nd place
+            <div class="input-field col s12 bid-selector">
+              <select required id="second-place">
+                <option value="" selected>Choose your preferred bid</option>
+                <option value="1">Bid 1</option>
+                <option value="2">Bid 2</option>
+                <option value="3">Bid 3</option>
+              </select>
+            </div>
+          </div>
+  
+          <div class="col s4">
+            3rd place
+            <div class="input-field col s12 bid-selector">
+              <select required id="third-place">
+                <option value="" selected>Choose your preferred bid</option>
+                <option value="1">Bid 1</option>
+                <option value="2">Bid 2</option>
+                <option value="3">Bid 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Share your thoughts below</label>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col s12 center-align">
+            <button type="submit" id="submit-vote" class="btn">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+
+
+  <script src="{{ url_for('static', filename='js/selector.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/tabs.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/submitVote.js') }}"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+</script>
+
 </html>
-      
+
+
+<!-- 
+<script src="{{ url_for('static', filename='js/scoreboard-chart.js') }}"></script>
+<img src="{{ url_for('static', filename='img/logo.png') }}" alt="" class="logo" /> -->
